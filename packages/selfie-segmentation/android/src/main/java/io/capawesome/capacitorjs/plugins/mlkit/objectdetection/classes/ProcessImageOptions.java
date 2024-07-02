@@ -1,4 +1,4 @@
-package io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation.classes;
+package io.capawesome.capacitorjs.plugins.mlkit.objectdetection.classes;
 
 import android.graphics.Bitmap;
 import com.google.mlkit.vision.common.InputImage;

@@ -1,4 +1,4 @@
-package io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation;
+package io.capawesome.capacitorjs.plugins.mlkit.objectdetection;
 
 import com.getcapacitor.Logger;
 import com.getcapacitor.Plugin;
@@ -6,13 +6,14 @@ import com.getcapacitor.PluginCall;
 import com.getcapacitor.PluginMethod;
 import com.getcapacitor.annotation.CapacitorPlugin;
 import com.google.mlkit.vision.common.InputImage;
-import io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation.classes.ProcessImageOptions;
-import io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation.classes.ProcessImageResult;
 
-@CapacitorPlugin(name = "SelfieSegmentation")
-public class SelfieSegmentationPlugin extends Plugin {
+import io.capawesome.capacitorjs.plugins.mlkit.objectdetection.classes.ProcessImageOptions;
+import io.capawesome.capacitorjs.plugins.mlkit.objectdetection.classes.ProcessImageResult;
 
-    public static final String TAG = "SelfieSegmentation";
+@CapacitorPlugin(name = "ObjectDetector")
+public class ObjectDetectionPlugin extends Plugin {
+
+    public static final String TAG = "ObjectDetection";
 
     public static final String ERROR_PROCESS_IMAGE_CANCELED = "processImage canceled.";
     public static final String ERROR_PATH_MISSING = "path must be provided.";
@@ -20,12 +21,12 @@ public class SelfieSegmentationPlugin extends Plugin {
 
     public static final float CONFIDENCE = 0.9f;
 
-    private SelfieSegmentation implementation;
+    private MyObjectDetection implementation;
 
     @Override
     public void load() {
         try {
-            implementation = new SelfieSegmentation(this);
+            implementation = new MyObjectDetection(this);
         } catch (Exception exception) {
             Logger.error(TAG, exception.getMessage(), exception);
         }

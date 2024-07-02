@@ -1,4 +1,4 @@
-package io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation.classes;
+package io.capawesome.capacitorjs.plugins.mlkit.objectdetection.classes;
 
 import com.getcapacitor.JSObject;
 
