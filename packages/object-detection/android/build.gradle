@@ -3,7 +3,8 @@ ext {
     androidxAppCompatVersion = project.hasProperty('androidxAppCompatVersion') ? rootProject.ext.androidxAppCompatVersion : '1.6.1'
     androidxJunitVersion = project.hasProperty('androidxJunitVersion') ? rootProject.ext.androidxJunitVersion : '1.1.5'
     androidxEspressoCoreVersion = project.hasProperty('androidxEspressoCoreVersion') ? rootProject.ext.androidxEspressoCoreVersion : '3.5.1'
-    mlkitSelfieSegmentationVersion = project.hasProperty('mlkitSelfieSegmentationVersion') ? rootProject.ext.mlkitSelfieSegmentationVersion : '16.0.0-beta5'
+    mlkitVisionCommonVersion = project.hasProperty('mlkitObjectDetectionVersion') ? rootProject.ext.mlkitObjectDetectionVersion : '17.3.0'
+    mlkitObjectDetectionVersion = project.hasProperty('mlkitObjectDetectionVersion') ? rootProject.ext.mlkitObjectDetectionVersion : '17.0.1'
 }
 
 buildscript {
@@ -12,14 +13,14 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.2.1'
+        classpath 'com.android.tools.build:gradle:8.2.2'
     }
 }
 
 apply plugin: 'com.android.library'
 
 android {
-    namespace "io.capawesome.capacitorjs.plugins.mlkit.selfiesegmentation"
+    namespace "io.capawesome.capacitorjs.plugins.mlkit.objectdetection"
     compileSdk project.hasProperty('compileSdkVersion') ? rootProject.ext.compileSdkVersion : 34
     defaultConfig {
         minSdkVersion project.hasProperty('minSdkVersion') ? rootProject.ext.minSdkVersion : 22
@@ -53,7 +54,8 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(':capacitor-android')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
-    implementation "com.google.mlkit:segmentation-selfie:$mlkitSelfieSegmentationVersion"
+    implementation "com.google.mlkit:object-detection:$mlkitObjectDetectionVersion"
+    implementation "com.google.mlkit:vision-common:$mlkitVisionCommonVersion"
     testImplementation "junit:junit:$junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
