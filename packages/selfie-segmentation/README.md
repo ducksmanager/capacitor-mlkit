@@ -1,11 +1,11 @@
-# @capacitor-mlkit/selfie-segmentation
+# @bperel/selfie-segmentation
 
 Unofficial Capacitor plugin for [ML Kit Selfie Segmentation](https://developers.google.com/ml-kit/vision/selfie-segmentation).[^1]
 
 ## Installation
 
 ```bash
-npm install @capacitor-mlkit/selfie-segmentation
+npm install @bperel/selfie-segmentation
 npx cap sync
 ```
 
@@ -30,7 +30,7 @@ A working example can be found here: [robingenz/capacitor-mlkit-plugin-demo](htt
 ## Usage
 
 ```typescript
-import { SelfieSegmentation } from '@capacitor-mlkit/selfie-segmentation';
+import { SelfieSegmentation } from '@bperel/selfie-segmentation';
 
 const processImage = async () => {
   const { path } = await SelfieSegmentation.processImage({

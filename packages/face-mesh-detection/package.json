@@ -1,6 +1,6 @@
 {
-  "name": "@capacitor-mlkit/face-mesh-detection",
-  "version": "6.1.0",
+  "name": "@bperel/face-mesh-detection",
+  "version": "6.2.0-beta.16",
   "description": "Capacitor plugin for ML Kit Face Mesh Detection.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorMlkitFaceMeshDetection.podspec"
+    "BperelFaceMeshDetection.podspec"
   ],
   "author": "Robin Genz <mail@robingenz.dev>",
   "license": "Apache-2.0",

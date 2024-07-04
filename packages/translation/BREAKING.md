@@ -20,5 +20,5 @@ This plugin now supports Capacitor 5 only. Please run `npx cap sync` after updat
 If you want to use this plugin with Capacitor 4, please install version `0.0.3`:
 
 ```
-npm i @capacitor-mlkit/translation@0.0.3
+npm i @bperel/translation@0.0.3
 ```

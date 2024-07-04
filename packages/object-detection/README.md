@@ -1,11 +1,11 @@
-# @capacitor-mlkit/object-detection
+# @bperel/object-detection
 
 Unofficial Capacitor plugin for [ML Kit Object Detection](https://developers.google.com/ml-kit/vision/object-detection).[^1]
 
 ## Installation
 
 ```bash
-npm install @capacitor-mlkit/object-detection
+npm install @bperel/object-detection
 npx cap sync
 ```
 
@@ -30,7 +30,7 @@ A working example can be found here: [robingenz/capacitor-mlkit-plugin-demo](htt
 ## Usage
 
 ```typescript
-import { ObjectDetection } from '@capacitor-mlkit/object-detection';
+import { ObjectDetection } from '@bperel/object-detection';
 
 const processImage = async () => {
   const { path } = await ObjectDetection.processImage({

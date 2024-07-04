@@ -1,11 +1,11 @@
-# @capacitor-mlkit/face-detection
+# @bperel/face-detection
 
 Unofficial Capacitor plugin for [ML Kit Face Detection](https://developers.google.com/ml-kit/vision/face-detection).[^1]
 
 ## Installation
 
 ```bash
-npm install @capacitor-mlkit/face-detection
+npm install @bperel/face-detection
 npx cap sync
 ```
 
@@ -36,7 +36,13 @@ A working example can be found here: [robingenz/capacitor-mlkit-plugin-demo](htt
 ## Usage
 
 ```typescript
-import { FaceDetection, PerformanceMode, LandmarkMode, ContourMode, ClassificationMode } from '@capacitor-mlkit/face-detection';
+import {
+  FaceDetection,
+  PerformanceMode,
+  LandmarkMode,
+  ContourMode,
+  ClassificationMode,
+} from '@bperel/face-detection';
 
 const processImage = async () => {
   const { faces } = await FaceDetection.processImage({

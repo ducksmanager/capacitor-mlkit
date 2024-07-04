@@ -1,4 +1,4 @@
-# @capacitor-mlkit/barcode-scanning
+# @bperel/barcode-scanning
 
 Unofficial Capacitor plugin for [ML Kit Barcode Scanning](https://developers.google.com/ml-kit/vision/barcode-scanning).[^1][^2]
 
@@ -29,7 +29,7 @@ A working example can be found here: [https://github.com/robingenz/capacitor-mlk
 ## Installation
 
 ```bash
-npm install @capacitor-mlkit/barcode-scanning
+npm install @bperel/barcode-scanning
 npx cap sync
 ```
 
@@ -104,7 +104,7 @@ import {
   BarcodeScanner,
   BarcodeFormat,
   LensFacing,
-} from '@capacitor-mlkit/barcode-scanning';
+} from '@bperel/barcode-scanning';
 
 const startScan = async () => {
   // The camera is visible behind the WebView, so that you can customize the UI in the WebView.

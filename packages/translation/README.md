@@ -1,11 +1,11 @@
-# @capacitor-mlkit/translation
+# @bperel/translation
 
 Unofficial Capacitor plugin for [ML Kit Translation](https://developers.google.com/ml-kit/language/translation).[^1]
 
 ## Installation
 
 ```bash
-npm install @capacitor-mlkit/translation
+npm install @bperel/translation
 npx cap sync
 ```
 
@@ -28,7 +28,7 @@ A working example can be found here: [robingenz/capacitor-mlkit-plugin-demo](htt
 ## Usage
 
 ```typescript
-import { Translation, Language } from '@capacitor-mlkit/translation';
+import { Translation, Language } from '@bperel/translation';
 
 const deleteDownloadedModel = async () => {
   await Translation.deleteDownloadedModel({

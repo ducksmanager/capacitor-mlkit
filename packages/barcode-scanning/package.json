@@ -1,6 +1,6 @@
 {
-  "name": "@capacitor-mlkit/barcode-scanning",
-  "version": "6.1.0",
+  "name": "@bperel/barcode-scanning",
+  "version": "6.2.0-beta.16",
   "description": "Capacitor plugin for ML Kit Barcode Scanning.",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -11,7 +11,7 @@
     "android/build.gradle",
     "dist/",
     "ios/Plugin/",
-    "CapacitorMlkitBarcodeScanning.podspec"
+    "BperelBarcodeScanning.podspec"
   ],
   "author": "Robin Genz <mail@robingenz.dev>",
   "license": "Apache-2.0",

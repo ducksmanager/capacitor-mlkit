@@ -1,11 +1,11 @@
-# @capacitor-mlkit/face-mesh-detection
+# @bperel/face-mesh-detection
 
 Unofficial Capacitor plugin for [ML Kit Face Mesh Detection](https://developers.google.com/ml-kit/vision/face-mesh-detection).[^1]
 
 ## Installation
 
 ```bash
-npm install @capacitor-mlkit/face-mesh-detection
+npm install @bperel/face-mesh-detection
 npx cap sync
 ```
 
@@ -28,7 +28,7 @@ A working example can be found here: [robingenz/capacitor-mlkit-plugin-demo](htt
 ## Usage
 
 ```typescript
-import { FaceMeshDetection, UseCase } from '@capacitor-mlkit/face-mesh-detection';
+import { FaceMeshDetection, UseCase } from '@bperel/face-mesh-detection';
 
 const processImage = async () => {
   const { faceMeshs } = await FaceMeshDetection.processImage({

@@ -9,12 +9,12 @@
   "commit": false,
   "fixed": [
     [
-      "@capacitor-mlkit/barcode-scanning",
-      "@capacitor-mlkit/face-detection",
-      "@capacitor-mlkit/face-mesh-detection",
-      "@capacitor-mlkit/object-detection",
-      "@capacitor-mlkit/selfie-segmentation",
-      "@capacitor-mlkit/translation"
+      "@bperel/barcode-scanning",
+      "@bperel/face-detection",
+      "@bperel/face-mesh-detection",
+      "@bperel/object-detection",
+      "@bperel/selfie-segmentation",
+      "@bperel/translation"
     ]
   ],
   "linked": [],
